@@ -159,6 +159,8 @@
 		    list_items += li_O + 'Matching ' + search + ' : ' + input.match(search) + li_C;
 		    list_items += li_O + 'Char Code at position 2: ' + input.charCodeAt(2) + li_C;
 		    list_items += li_O + 'Char from code 97 (Unicode a): ' + String.fromCharCode(97) + li_C;
+		    list_items += li_O + 'Replace All  :  ' + input.replaceAll(replace_f,replace_s) + li_C;
+                list_items += li_O + 'Split  :  ' + input.split("|") + li_C;
 		  
 		    
 		    document.getElementById('output').innerHTML = (list_items);
@@ -181,6 +183,14 @@
                                 list_items += li_O + 'Minimum of (0, 150, 30, 20, -8, -200)is : ' + Math.min(0, 150, 30, 20, -8, -200) + li_C;
                                 list_items += li_O + 'Maximum of (0, 150, 30, 20, -8, -200)is : ' + Math.max(0, 150, 30, 20, -8, -200) + li_C;
                                 list_items += li_O + 'A Random number is : ' + Math.random()+ li_C;
+                                list_items += li_O + 'Arctangent of the Quotient : ' + Math.atan2(power,input) + li_C;
+            			  list_items += li_O + 'Hyperbolic arctangent ' + Math.atanh(input) + li_C;
+            			  list_items += li_O + 'Hyperbolic Cosine : ' + Math.cosh(input) + li_C;
+            			  list_items += li_O + 'ArcSine  : ' + Math.asin(input) + li_C;
+            			  list_items += li_O + 'Hyperbolic Arc sine: ' + Math.asinh(input) + li_C;
+            			  list_items += li_O + 'Cube root : ' + Math.cbrt(input) + li_C;
+            			  list_items += li_O + 'Exponent : ' + Math.exp(input) + li_C;
+            			  list_items += li_O + 'Integer part of number is : ' + Math.trunc(input) + li_C;
                         document.getElementById('output_math').innerHTML =(list_items);
                 }
 </script>
